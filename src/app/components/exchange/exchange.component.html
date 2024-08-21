@@ -1,0 +1,48 @@
+<section class="exchange">
+    <div class="exchange__container">
+      <h3 class="exchange__container__title">Exchange</h3>
+      <div class="exchange__container__group group">
+        <input
+          type="number"
+          class="group__input"
+          [(ngModel)]="amount1"
+          (input)="onAmount1Change()"
+          placeholder="Amount"
+          min="0"
+        />
+        <select
+          name="currency1"
+          id="currency1"
+          class="group__select"
+          [(ngModel)]="currency1"
+          (ngModelChange)="onCurrencyChange()"
+        >
+          <option value="uah">UAH</option>
+          <option value="usd">USD</option>
+          <option value="eur">EUR</option>
+        </select>
+      </div>
+      <div class="exchange__container__group group">
+        <input
+          type="number"
+          class="group__input"
+          [(ngModel)]="amount2"
+          (input)="onAmount2Change()"
+          placeholder="Amount"
+          min="0"
+        />
+        <select
+          name="currency2"
+          id="currency2"
+          class="group__select"
+          [(ngModel)]="currency2"
+          (ngModelChange)="onCurrencyChange()"
+        >
+          <option value="uah">UAH</option>
+          <option value="usd">USD</option>
+          <option value="eur">EUR</option>
+        </select>
+      </div>
+    </div>
+  </section>
+  
