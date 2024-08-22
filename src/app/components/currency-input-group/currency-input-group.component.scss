@@ -1,0 +1,23 @@
+.group{
+    background-color: aliceblue;
+    margin: 20px;
+    padding: 10px;
+    width: 380px;
+    &__input{
+        border: none;
+        height: 30px;
+        background-color: aliceblue;
+        outline: none;
+        width: 80%;
+        font-size: 18px;
+    }
+    &__select{
+      margin-left: 10px;
+        border: none;
+        height: 30px;
+        font-size: 18px;
+        outline: none;
+        cursor: pointer;
+        background-color: aliceblue;
+    }
+}

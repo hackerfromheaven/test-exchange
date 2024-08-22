@@ -6,7 +6,7 @@ import { ExchangeRateResponse } from '../../app.component';
   providedIn: 'root'
 })
 export class ExchangeRateService {
-  private readonly apiBaseUrl = 'https://v6.exchangerate-api.com/v6/510be5d2b5ba64b034034c53/latest';
+  private readonly apiBaseUrl = 'https://v6.exchangerate-api.com/v6/de5c7fcf8be8ea8f8e2798df/latest';
 
   http = inject(HttpClient);
 

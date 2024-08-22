@@ -1,0 +1,18 @@
+<div class="group">
+    <input
+      type="number"
+      class="group__input"
+      [(ngModel)]="amount"
+      (ngModelChange)="onAmountChange($event)"
+      placeholder="Amount"
+      min="0"
+    />
+    <select
+      class="group__select"
+      [(ngModel)]="currency"
+      (ngModelChange)="onCurrencyChange()"
+    >
+      <option *ngFor="let curr of currencies" [value]="curr">{{ curr.toUpperCase() }}</option>
+    </select>
+  </div>
+  

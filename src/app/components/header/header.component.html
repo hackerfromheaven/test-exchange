@@ -1,7 +1,7 @@
 <header class="header">
   <section class="header__main-currencies main-currencies">
     <div class="main-currencies__item">
-      <span class="main-currencies__item__exchange-rate">{{exchangeRateUSD | number: '1.2-2'}}</span>
+      <span class="main-currencies__item__exchange-rate">{{exchangeRateUSD?.toFixed(2)}}</span>
       <img
       class="main-currencies__item__img"
       src="/assets/imgs/free-icon-united-states-of-america-555526.png"
@@ -9,7 +9,7 @@
 
     </div>
     <div class="main-currencies__item">
-      <span class="main-currencies__item__exchange-rate">{{exchangeRateEUR | number: '1.2-2'}}</span>
+      <span class="main-currencies__item__exchange-rate">{{exchangeRateEUR?.toFixed(2)}}</span>
       <img
       class="main-currencies__item__img"
       src="/assets/imgs/free-icon-european-union-330426.png"
